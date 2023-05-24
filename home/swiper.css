@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+/* Remove default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Default anchor tag styling */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+
+.swiper-container {
+  display: flex;
+  height: 550px;
+  margin: 25px 0px;
+  position: relative;
+  background-color: #091115;
+  padding: 18px 15px 0px 45px;
+  color: white;
+}
+
+.container > section {
+  top: 25vh;
+  height: 50vh;
+}
+
+div.project_content {
+  padding-top: 25vh;
+  justify-items: center;
+  align-items: center;
+}
+.project_content h1,
+h2,
+p {
+  padding: 0.2rem 1rem;
+}
+
+.project_container img {
+  height: 75%;
+}
+
+/* Swiper container stylng */
+.swiper {
+  right: 1rem;
+  width: 100%;
+  height: 80%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  padding-top: 45px;
+  width: 370px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 550px) {
+  .swiper-container{
+    height: 600px;
+  }
+}

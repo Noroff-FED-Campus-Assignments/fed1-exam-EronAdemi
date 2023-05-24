@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap");
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 141px;
+  padding: 0px 20px;
+  background-color: #091115;
+  margin-bottom: 80px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+.navlinks a:hover {
+  color: #f2a154;
+}
+
+.authorization {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+
+.signUp {
+  color: white;
+  font-size: 24px;
+}
+
+.login {
+  background-color: white;
+  font-size: 24px;
+  padding: 7px 25px;
+  border-radius: 5px;
+  color: #091115;
+}
+
+@media (max-width: 900px) {
+  .navlinks {
+    display: none;
+  }
+  .authorization {
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", "Roboto Mono";
+  overflow-x: hidden;
+  margin: 0px;
+}
+
+.body-container {
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+}
+.main-image img {
+  width: 100%;
+}
+.main-image .text-group {
+  transform: translate(30px, -140px);
+  color: white;
+}
+.main-image h3 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 24px;
+  width: 40%;
+}
+.main-image p {
+  width: 70%;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.image-group {
+  width: 100%;
+}
+
+.articles {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 25px;
+  margin-bottom: 25px;
+}
+
+.article {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.article img {
+  width: 400px;
+  height: 250px;
+}
+
+@media (max-width: 500px) {
+  .articles {
+    padding: 0px;
+  }
+  .article {
+    width: 100%;
+  }
+  .article img {
+    width: 100%;
+  }
+}
+.view-all-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.view-all-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #091115;
+  border-radius: 15px;
+  height: 88px;
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
+footer {
+  width: 100%;
+  height: 390px;
+  background-color: #091115;
+  display: flex;
+  padding-top: 70px;
+}
+footer a {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer img {
+  width: 370px;
+  height: 258px;
+}
+
+.cols {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 1200px) {
+  .main-image {
+    padding: 0px;
+  }
+  .main-image .text-group {
+    transform: translate(0px, 0px);
+    color: black;
+  }
+  .main-image p {
+    width: auto;
+  }
+  .main-image h3 {
+    width: auto;
+  }
+  .recent {
+    margin-top: 80px;
+  }
+  .articles {
+    justify-content: center;
+    gap: 25px;
+  }
+}
+@media (max-width: 850px) {
+  footer {
+    flex-direction: column;
+    height: 750px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cols {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .footer-logo {
+    width: 100%;
+    justify-content: center;
+  }
+}

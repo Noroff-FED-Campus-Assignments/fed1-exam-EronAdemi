@@ -1,0 +1,54 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 141px;
+    padding: 0px 20px;
+    background-color: #091115;
+    margin-bottom: 80px;
+  }
+  
+  .navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+  }
+  .navlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+  }
+  .navlinks a:hover {
+    color: #f2a154;
+  }
+  
+  .authorization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 220px;
+  }
+  
+  .signUp {
+    color: white;
+    font-size: 24px;
+  }
+  
+  .login {
+    background-color: white;
+    font-size: 24px;
+    padding: 7px 25px;
+    border-radius: 5px;
+    color: #091115;
+  }
+  
+  @media (max-width: 900px) {
+    .navlinks {
+      display: none;
+    }
+    .authorization {
+      display: none;
+    }
+  }
