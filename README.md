@@ -157,5 +157,5 @@ Make sure you go through this checklist before submitting your project to Moodle
 
 ## Authors
 
-- _YOURE_NAME_ (@_your_github_username_)
+- Eron Ademi (@EronAdemi)
 - Monde Sineke (@S3ak)
