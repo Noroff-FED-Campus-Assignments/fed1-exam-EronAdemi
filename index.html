@@ -2,48 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="_REPLACE_WITH_DESCRIPTION_" />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript, _REPLACE_WITH_KEYWORD_"
+    <meta name="description" content="The Hexagon is a crypto blog made by Eron Ademi" />
+    <meta name="author" content="Eron Ademi">
+    <title>The Hexagon</title>
+    <link rel="stylesheet" href="./home/swiper.css" />
+    <link rel="stylesheet" href="./home/index.css" />
+    <link rel="stylesheet" href="./home/hamburger.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <meta name="author" content="_YOUR_NAME_" />
-    <link rel="stylesheet" href="/style.css" />
-    <!-- TODO: Import Javascript -->
-    <title>_REPLACE_SITE_NAME</title>
+    <!-- Hotjar Tracking Code for the hexagon -->
+    <script>
+     (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3506634,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+     </script>
   </head>
-  <body class="animate__animated animate__fadeIn">
-    <header class="l-header">
-      <h1>Home</h1>
-    </header>
+  <body>
+        <div class="body-container">
 
-    <main class="l-main">
-      <section role="search"></section>
+    <nav>
+      <img src="./assets/logo.png" alt="The hexagon logo" />
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">About</a>
+      </div>
+      <div class="authorization">
+        <a href="#" class="signUp">Sign Up</a>
+        <a href="#" class="login">Log in</a>
+      </div>
 
-      <article role="doc-introduction">
-        <h2>List</h2>
+      <!-- Hamburger menu, original by Erik Terwan - Link in sourcelist -->
 
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href=""><li>Login</li></a>
+          <a href=""><li style="margin-bottom: 80px">SignUp</li></a>
+          <a href="index.html"><li>Home</li></a>
+          <a href="blog.html"><li>Blogs</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+          <a href="contact.html"><li>About</li></a>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="title">
+        <h4>The HEXAGON</h4>
+        <h1>Blog posts from our team</h1>
+        <p>The latest crypto news, technologies and resources</p>
+      </div>
+      <div class="main-image">
         <img
-          src="/placeholder.jpg"
-          loading="lazy"
-          alt="…"
-          class="u-img hero-image"
-          width="1024"
-          height="1024"
+          class="main-images"
+          src="./assets/blockchain-7571280_960_720 1.png"
+          alt="Picture of a different blocks chained together to represent a blockchain"
         />
+        <div class="text-group">
+          <h3>The Power of Decentralized Cryptocurrency</h3>
+          <p>
+            Discover the benefits of decentralized finance (DeFi) and the
+            challenges it faces, such as volatility and regulatory
+            uncertainties.
+          </p>
+        </div>
+      </div>
 
-        <p>_REPLACE_INTRODUCTION_</p>
-      </article>
+      <!-- Carousel author credit is swiperJS - Link in sourcelist -->
 
-      <section role="list">
-        <div id="js-list-container">_LOADING_INDICATOR_GOES_HERE_</div>
-      </section>
     </main>
-
-    <footer class="l-footer">
-      <small>Created with ❤️ by _REPLACE_</small>
+    <h2 class="recent">Recent blog posts</h2>
+    <div class="swiper-container">
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+      <div class="swiper-pagination"></div>
+    </div>
+    <h2>Read More</h2>
+    <div class="articles"></div>
+    <div class="view-all-container">
+      <a href="blog.html"> <p>View all blog posts</p> </a>
+    </div>
+    <footer>
+      <div class="cols">
+        <div class="first col">
+          <a href="index.html">Home</a>
+          <a href="index.html">Recent Posts</a>
+          <a href="blog.html">Overview</a>
+        </div>
+        <div class="first col">
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-logo">
+        <img src="./assets/logo.png" alt="The hexagon logo" />
+      </div>
     </footer>
+        </div>
   </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./home/swiper.js"></script>
+  <script src="./home/index.js"></script>
 </html>

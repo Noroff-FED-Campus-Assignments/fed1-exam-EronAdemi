@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Hexagon blog post made by Eron Ademi" />
+    <meta name="author" content="Eron Ademi">
+    <title></title>
+    <link rel="stylesheet" href="./specific_blog/specific.css" />
+    <link rel="stylesheet" href="./specific_blog/modal.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <img src="./assets/logo.png" alt="The hexagon logo" />
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="/blog.html">Blogs</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">About</a>
+        </div>
+        <div class="authorization">
+          <a class="signUp">Sign Up</a>
+          <a class="login">Log in</a>
+        </div>
+
+        <!-- Hamburger menu, original by Erik Terwan - Link in sourcelist -->
+
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href=""><li>Login</li></a>
+            <a href=""><li style="margin-bottom: 80px">SignUp</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="blog.html"><li>Blogs</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="contact.html"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="specific-container">
+          <h1></h1>
+          <img id="openModalBtn" />
+          <p></p>
+        </div>
+      </main>
+
+      <!-- Popup modal author credit is daily-dev-tips.com - Link in sourcelist -->
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <img id="modalImg" alt="" />
+        </div>
+      </div>
+      <footer>
+        <div class="cols">
+          <div class="first col">
+            <a href="index.html">Home</a>
+            <a href="index.html">Recent Posts</a>
+            <a href="blog.html">Overview</a>
+          </div>
+          <div class="first col">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="The hexagon logo" />
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./specific_blog/specific.js"></script>
+  <script src="./specific_blog/modal.js"></script>
+</html>

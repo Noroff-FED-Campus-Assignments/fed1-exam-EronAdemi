@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The Hexagon about and contact page by Eron Ademi" />
+    <meta name="author" content="Eron Ademi">
+    <title>The Hexagon About Us</title>
+    <link rel="stylesheet" href="./contact/contact.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <nav>
+        <img src="./assets/logo.png" alt="The Hexagon Logo" />
+        <div class="navlinks">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blogs</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html">About</a>
+        </div>
+        <div class="authorization">
+          <a href="#" class="signUp">Sign Up</a>
+          <a href="#" class="login">Log in</a>
+        </div>
+
+        <!-- Hamburger menu, original by Erik Terwan - Link in sourcelist -->
+
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href=""><li>Login</li></a>
+            <a href=""><li style="margin-bottom: 80px">SignUp</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="blog.html"><li>Blogs</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="contact.html"><li>About</li></a>
+          </ul>
+        </div>
+      </nav>
+      <main style="display: flex; flex-direction: column; align-items: center">
+        <div class="inner-container">
+          <div class="inner-title">
+            <h1>The HEAXAGON</h1>
+            <h3>About Us</h3>
+          </div>
+          <p style="margin-top: 80px; max-width: 850px">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus
+            aliquam nibh, a laoreet purus facilisis ut. Ut lacinia diam at
+            tortor luctus eleifend. Curabitur in libero at sapien convallis
+            tristique. Fusce feugiat tincidunt felis, at eleifend ex cursus vel.
+            Suspendisse potenti. Nunc bibendum purus et ligula consectetur, id
+            posuere justo tincidunt. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Sed dapibus aliquam nibh, a laoreet purus facilisis
+            ut. Ut lacinia diam at tortor luctus eleifend. Curabitur in libero
+            at sapien convallis tristique. Fusce feugiat tincidunt felis, at
+            eleifend ex cursus vel. Suspendisse potenti. Nunc bibendum purus et
+            ligula consectetur, id posuere justo tincidunt.
+          </p>
+
+          <!-- Contact form author credit is w3schools.com -->
+
+          <div class="form-container">
+            <h2 style="margin-top: 145px">Contact Us</h2>
+            <p>You can use your own contact form and contact us directly.</p>
+
+            <form name="myForm" onsubmit="return validateForm()">
+              <input name="fname" type="text" placeholder="Enter Your Name" />
+              <input name="fsubject" type="text" placeholder="Subject" />
+              <input
+                name="femail"
+                type="text"
+                id=""
+                placeholder="Enter E-Mail"
+              />
+              <textarea
+                name="fmessage"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Write us a message..."
+              ></textarea>
+              <button class="send-button" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="cols">
+          <div class="first col">
+            <a href="index.html">Home</a>
+            <a href="index.html">Recent Posts</a>
+            <a href="blog.html">Overview</a>
+          </div>
+          <div class="first col">
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">About</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <img src="./assets/logo.png" alt="The hexagon logo" />
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./contact/contact.js"></script>
+</html>
